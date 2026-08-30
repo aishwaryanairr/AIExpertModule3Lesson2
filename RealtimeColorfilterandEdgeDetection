@@ -40,7 +40,7 @@ def main():
     while True:
         ret, frame = cap.read()
         if not ret:
-            print("Can't receive frame")
+            print("Can't receive frame!!")
             break
         out = apply_filter(frame, ftype)
         cv2.imshow("Filter", out)
